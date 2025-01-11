@@ -1,3 +1,30 @@
+# Cantunan Food Ordering Web App
+
+## Requirements
+- Docker
+- Laravel Sail
+- PHP 8.2+
+
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/cantunan.git
+   cd cantunan
+2. Install dependencies
+   ```bash
+   composer install
+3. Copy the example environment file and set up the .env:
+   ```bash
+   cp .env.example .env
+4. Start the containers:
+   ```bash
+   ./vendor/bin/sail up
+5. Run database migrations and seeders:
+   ```bash
+   ./vendor/bin/sail artisan migrate --seed
+6. Access the app at http://localhost.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
