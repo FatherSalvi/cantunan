@@ -1,5 +1,5 @@
-# Cantunan Food Ordering Web App
-
+# Cantunan Food Hub
+#### This is a project submitted to Prof. Janny Surmieda as a requirement for completing LIS 162.
 ## Requirements
 - Docker
 - Laravel Sail
@@ -31,6 +31,8 @@
 3. Restore the database
    ```bash
    ./vendor/bin/sail exec mysql mysql -u sail -p laravel < database_dump.sql
+
+
 ---
 
 
