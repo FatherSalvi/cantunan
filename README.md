@@ -18,15 +18,21 @@
    cp .env.example .env
 4. Start the containers:
    ```bash
-   ./vendor/bin/sail up
+   ./vendor/bin/sail up -d
 5. Run database migrations and seeders:
    ```bash
    ./vendor/bin/sail artisan migrate --seed
 6. Access the app at http://localhost.
 
+## Importing the Current Database
+1. Make sure the Laravel Sail environment is running
+   ```bash
+   ./vendor/bin/sail up -d
+3. Restore the database
+   ```bash
+   ./vendor/bin/sail exec mysql mysql -u sail -p laravel < database_dump.sql
 ---
 
-### Laravel Default README Below
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
